@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 30px;
+}
+
+.container{
+    display: flex;
+    max-width: 500px;
+    flex-wrap: wrap;
+}
+
+.square{
+    height: 15px;
+    width: 15px;
+    background-color: #1d1d1d;
+    margin: 2px;
+    box-shadow: 0 0 3px #1d1d1d;
+}
+
+#squareNumber{
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1d1d1d;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 8px 16px;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+}
+
+#squareNumber::-webkit-outer-spin-button,
+#squareNumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
